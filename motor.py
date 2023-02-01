@@ -16,7 +16,13 @@ my_servo = servo.Servo(pwm)
 #some servos move 360 degrees
 #this servo only moves between 0 and 180 degrees.
 
+my_servo.angle = 0          #changes angles to 0 degrees
+my_servo.angle = 90         #changes angles to 90 degrees
+my_servo.angle = 180        #changes angles to 180 degrees
 
+#0,180 degrees might not be entirely straight
+
+#this loop moves it forward then backwards
 while True:
     for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
         my_servo.angle = angle      #moves the servo angle
