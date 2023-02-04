@@ -1,0 +1,12 @@
+#turn on lights one at a time
+
+
+from adafruit_circuitplayground import cp
+import time
+
+
+while True:
+    for i in range(10):
+        cp.pixels[i] = (255,0,255)
+        time.sleep(.1)
+
