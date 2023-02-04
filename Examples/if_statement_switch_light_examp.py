@@ -1,4 +1,4 @@
-#switch-light examples
+#switch/buttom-light examples
 
 
 from adafruit_circuitplayground import cp
@@ -7,5 +7,6 @@ from adafruit_circuitplayground import cp
 while True:
     if cp.switch:
         cp.red_led = True
-    else:
-        cp.red_led = False
+    elif cp.button:
+        cp.red_led = True
+    cp.red_led = False
