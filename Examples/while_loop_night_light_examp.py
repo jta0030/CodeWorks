@@ -2,9 +2,10 @@
 
 from adafruit_circuitplayground import cp
 
+length = 1
+frequency = 440
 while True:
-    cp.pixels.fill((0,0,0))
-    
-    whie cp.light > 10:       #checks if the light level is above 10
-        cp.pixels.fill((255,255,255))
+
+    whie cp.light < 10:       #checks if the light level is above 10
+        cp.play_tone(frequency,length)
 
